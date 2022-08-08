@@ -1,0 +1,14 @@
+@import '../../../../styles/mixins';
+@import '../../../../styles/variables';
+
+.initial-button {
+  @include button;
+
+  color: $white-color;
+  background-color: $green-color;
+  transition: background 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $green-active-color;
+  }
+}

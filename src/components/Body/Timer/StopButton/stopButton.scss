@@ -1,0 +1,26 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
+
+.stop-button {
+  @include button;
+
+  border: 2px solid $number-color;
+  color: $number-color;
+  transition: background 0.3s, color 0.3s ease-in-out;
+
+  &:hover {
+    color: $white-color;
+    background-color: $red-color;
+  }
+
+  &:disabled {
+    border: 2px solid $number-color;
+    color: $number-color;
+    background-color: transparent;
+  }
+
+  &--active {
+    border-color: $red-color;
+    color: $red-color;
+  }
+}

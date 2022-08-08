@@ -1,0 +1,27 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.edit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__input {
+    @include input;
+  }
+
+  &__button {
+    @include button;
+
+    color: $white-color;
+    background-color: $green-color;
+  }
+}
+
+.error {
+  border: 1px solid $red-color;
+
+  &::placeholder {
+    color: $red-color;
+  }
+}

@@ -1,0 +1,52 @@
+@import '../../../styles/variables';
+
+.column {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &__name {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $gray-color;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: $red-hover-color;
+    }
+
+    &--selected {
+      color: $red-color;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 50px;
+    width: 77px;
+    height: 5px;
+    background-color: $number-color;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $red-hover-color;
+    }
+
+    &--hv {
+      background-color: $pink-color;
+    }
+
+    &--active {
+      background-color: $red-color;
+    }
+
+    &--selected {
+      background-color: $red-active-color;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import '../../../styles/variables';
+
+.card {
+  padding: 30px;
+  min-width: 500px;
+  background: $background-color  no-repeat right 25px center / 100px 100px;
+  transition: background 0.3s ease-in-out;
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  &__info {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 76px;
+  }
+
+  &--focus {
+    background-color: $focus-background-color;
+  }
+
+  &--pause {
+    background-color: $pause-background-color;
+  }
+
+  &--stop {
+    background-color: $stop-background-color;
+  }
+}

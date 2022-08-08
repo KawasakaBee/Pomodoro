@@ -1,0 +1,110 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.timer {
+  min-width: 45%;
+  background-color: $background-color;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: $number-color;
+    transition: background 0.3s ease-in-out;
+
+    &--break {
+      background-color: $green-color;
+    }
+
+    &--long-break {
+      background-color: $blue-color;
+    }
+
+    &--active {
+      background-color: $red-color;
+    }
+  }
+
+  &__objective {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    color: $white-color;
+  }
+
+  &__tomato {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: $white-color;
+  }
+
+  &__screen {
+    padding: 70px 160px 100px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  &__time {
+    font-weight: 200;
+    font-size: 150px;
+    line-height: 179px;
+    transition: color 0.3s ease-in-out;
+
+    &--break {
+      color: $green-color;
+    }
+
+    &--long-break {
+      color: $blue-color;
+    }
+
+    &--active {
+      color: $red-color;
+    }
+  }
+
+  &__plus {
+    width: 50px;
+    height: 50px;
+    background: transparent url('../../../assets/timer-plus.svg') no-repeat center center / contain;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-image: url('../../../assets/plus-active.svg');
+    }
+  }
+
+  &__tasks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  &__number {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: $gray-color;
+  }
+
+  &__task {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}

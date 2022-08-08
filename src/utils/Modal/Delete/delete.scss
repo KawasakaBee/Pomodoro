@@ -1,0 +1,31 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.delete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 17px;
+  }
+
+  &__button {
+    @include button;
+
+    margin-bottom: 10px;
+    color: $white-color;
+    background-color: $red-color;
+  }
+
+  &__cancel {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 17px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

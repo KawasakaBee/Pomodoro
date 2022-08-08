@@ -1,0 +1,48 @@
+@import '../../styles//variables';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 80px;
+  min-height: 70px;
+  box-shadow: 0 10px 63px rgb(0 0 0 / 7%);
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    color: $red-color;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $red-active-color;
+    }
+  }
+
+  &__statistics {
+    padding: 10px 15px 10px 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: $red-color;
+    background: transparent url('../../assets/equalizer.svg') no-repeat left center;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: $red-active-color;
+    }
+  }
+}

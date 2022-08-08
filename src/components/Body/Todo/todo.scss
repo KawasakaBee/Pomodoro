@@ -1,0 +1,34 @@
+@import '../../../styles/variables';
+
+.todo {
+  max-width: 45%;
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  &__list {
+    margin-bottom: 25px;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 25px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 33px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 13px;
+      border-radius: 50%;
+      width: 6px;
+      height: 6px;
+      background-color: $dark-red-color;
+    }
+  }
+}
