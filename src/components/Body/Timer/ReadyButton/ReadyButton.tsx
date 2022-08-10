@@ -34,10 +34,10 @@ export const ReadyButton: FunctionComponent<ReadyButtonProps> = ({
     setIsPause(false);
 
     if (currentPomidoro % 4 === 0) {
-      setCount('30:00');
+      setCount('01:00'); //6
       setLongBreak(true);
     } else {
-      setCount('05:00');
+      setCount('01:00'); //7
       setBreak(true);
     }
 

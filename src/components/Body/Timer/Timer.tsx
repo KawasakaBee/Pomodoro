@@ -29,7 +29,7 @@ export const Timer = () => {
   const [workTime, setWorkTime] = useState(currentDay.dayWork);
   const [isPause, setIsPause] = useState(false);
   const [isBreak, setIsBreak] = useState(false);
-  const [count, setCount] = useState('25:00');
+  const [count, setCount] = useState('01:00'); //1
 
   useEffect(() => {
     if (timerRef.current !== undefined) {
@@ -45,16 +45,16 @@ export const Timer = () => {
       if (count === '00:00') {
         if (!isBreak && !isLongBreak) {
           if (currentTimer.currentPomidoro % 4 === 0) {
-            setCount('30:00');
+            setCount('01:00'); //2
             setIsLongBreak(true);
           } else {
-            setCount('05:00');
+            setCount('01:00'); //3
             setIsBreak(true);
           }
         } else {
           clearInterval(timerRef.current);
           timerRef.current = undefined;
-          setCount('25:00');
+          setCount('01:00'); //4
           setTimerIsActive(false);
           setIsBreak(false);
           setIsLongBreak(false);

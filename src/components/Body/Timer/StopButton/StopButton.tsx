@@ -22,7 +22,7 @@ export const StopButton: FunctionComponent<StopButtonProps> = ({ timerIsActive, 
   function stopHandler() {
     clearInterval(timerRef.current);
 
-    setCount('25:00');
+    setCount('01:00'); //5
     setActive(false);
     setPomidoroCount(1);
 

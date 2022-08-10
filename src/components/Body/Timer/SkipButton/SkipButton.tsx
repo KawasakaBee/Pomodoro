@@ -41,7 +41,7 @@ export const SkipButton: FunctionComponent<SkipButtonProps> = ({
     clearInterval(timerRef.current);
     clearInterval(pauseTimeRef.current);
     timerRef.current = undefined;
-    setCount('25:00');
+    setCount('01:00'); //8
     setActive(false);
     setBreak(false);
     setLongBreak(false);
